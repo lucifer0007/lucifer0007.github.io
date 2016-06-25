@@ -1,0 +1,66 @@
+/*!
+ * Start Bootstrap - 3 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+body {
+    padding-top: 70px;
+ /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+ font-family: 'Dancing Script', cursive;
+ 
+  /* Location of the image */
+  background-image: url(../images/j.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+a , p{
+    color:black; 
+    margin-left: 50px;
+}
+
+h1{
+    color:white; 
+}
+
+
+a:hover{
+    color:black; 
+}
+
+h3,p {
+  font-family: 'Roboto', sans-serif;
+} 
+
+.small, small {
+    font-size: 100%;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wow {
+	background-color: white;
+}
+
+
+footer {
+    margin: 50px 0;
+}
