@@ -1,3 +1,1 @@
-$('a').each(function() {
-    $(this).attr('data-transition','flip'); 
-});
+$('a').each(function(){$(this).attr('data-transition','flip');});
