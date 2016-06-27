@@ -38,7 +38,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Contact</a>
+					<a class="navbar-brand" href="index.html">
+                <i class="fa fa-3x fa-home" aria-hidden="true"></i>
+                </a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -85,6 +87,10 @@
                             </div>
                             <div class="form-bottom contact-form">
 			                    <form role="form" action="assets/contact.php" method="post">
+                                    <div class="form-group">
+                                         <label class="sr-only" for="contact-name">Name</label>
+                                         <input type="text" name="name" placeholder="Name..." class="contact-name form-control" id="contact-name">
+                                    </div>
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="contact-email">Email</label>
 			                        	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
