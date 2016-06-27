@@ -8,31 +8,27 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the message
-    $emailTo = 'cullen0064@gmail.com';
+    $emailTo = 'contact.azmind@gmail.com';
 
-    $contact-email = addslashes(trim($_POST['contact-email']));
-    $contact-subject = addslashes(trim($_POST['contact-subject']));
-    $contact-message = addslashes(trim($_POST['contact-message']));
-    $contact-no = addslashes(trim($_POST['contact-no']));
+    $clientEmail = addslashes(trim($_POST['email']));
+    $subject = addslashes(trim($_POST['subject']));
+    $message = addslashes(trim($_POST['message']));
 
     $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
 
-    if(!isEmail($contact-email)) {
+    if(!isEmail($clientEmail)) {
         $array['emailMessage'] = 'Invalid email!';
     }
-     if(!isEmail($contact-no)) {
-        $array['contactNo'] = 'Invalid Phone no!';
-    }
-    if($contact-subject == '') {
+    if($subject == '') {
         $array['subjectMessage'] = 'Empty subject!';
     }
-    if($contact-message == '') {
+    if($message == '') {
         $array['messageMessage'] = 'Empty message!';
     }
-    if(isEmail($contact-email) && $contact-subject != '' && $contact-message != '') {
+    if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
-		$headers = "From: " . $contact-email . " <" ,. $contact-no . " <". $contact-email . ">" . "\r\n" . "Reply-To: " . $contact-email;
-		mail($emailTo, $contact-subject . " (bootstrap contact form)", $contact-message, $headers);
+		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
+		mail($emailTo, $subject . " (bootstrap contact form)", $message, $headers);
     }
 
     echo json_encode($array);
