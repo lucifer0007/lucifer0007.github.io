@@ -6,7 +6,10 @@ body {
     color: #888;
     line-height: 30px;
     text-align: center;
+    
 }
+
+
 
 strong { font-weight: 500; }
 
@@ -31,10 +34,6 @@ h3 {
     line-height: 30px;
 }
 
-img { max-width: 100%; }
-
-::-moz-selection { background: #19b9e7; color: #fff; text-shadow: none; }
-::selection { background: #19b9e7; color: #fff; text-shadow: none; }
 
 
 .btn-link-1 {
@@ -100,11 +99,7 @@ ul.navbar-nav {
 .navbar-inverse ul.navbar-nav li .li-social a:hover, 
 .navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #19b9e7; }
 
-.navbar-brand {
-	width: 113px;
-	background: url(../img/logo.png) left center no-repeat;
-	text-indent: -99999px;
-}
+
 
 
 /***** Top content *****/
@@ -225,8 +220,6 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 	
 	/* logo */
-    .navbar-brand {
-    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 113px 32px !important;
-    }
+    
 	
 }

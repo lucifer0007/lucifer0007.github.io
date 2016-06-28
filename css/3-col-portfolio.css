@@ -49,8 +49,8 @@ a:hover{
 h3,p {
   font-family: 'Roboto', sans-serif;
 } 
-
 .small, small {
+    color: #ff0000;
     font-size: 100%;
     margin-left: 50px;
     font-family: 'Roboto', sans-serif;
